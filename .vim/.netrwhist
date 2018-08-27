@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/yoshihiro.nomura/logikura/app/controllers/api/web/companies'
+let g:netrw_dirhist_2='/Users/yoshihiro.nomura/logikura/config/locales/controllers/api/web/products/with_options'
+let g:netrw_dirhist_3='/Users/yoshihiro.nomura/workspace/classi_partner/app/controllers/concerns/api'
+let g:netrw_dirhist_4='/Users/yoshihiro.nomura/workspace/classi_partner/app/controllers/concerns/api/v1'
+let g:netrw_dirhist_5='/Users/yoshihiro.nomura/workspace/classi_partner/app/controllers'
