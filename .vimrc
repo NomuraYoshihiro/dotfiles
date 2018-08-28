@@ -100,6 +100,7 @@ if dein#load_state('~/.cache/dein')
  call dein#add('pangloss/vim-javascript')
  call dein#add('rking/ag.vim') " vim内で:Agで検索できる
  call dein#add('scrooloose/nerdtree')
+ call dein#add('kien/ctrlp.vim') " ファイル検索
 
  call dein#end()
  call dein#save_state()
@@ -107,3 +108,9 @@ endif
 
 filetype plugin indent on
 syntax enable
+
+" ctrlpの設定
+" gitignoreに指定されているファイルや一時ファイルを対象外にする
+" ctrlpでagコマンドで検索する
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard', 'ag %s -l']
