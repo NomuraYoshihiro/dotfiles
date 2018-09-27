@@ -1,0 +1,40 @@
+[user]
+name = nomuyoshi
+email = nomuyoshi0111@gmail.com
+
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+[push]
+  default = upstream # defaultのpush先はtrackingしているリポジトリ
+[core]
+  excludesfile = ~/.gitignore  # globalな.gitignoreの指定
+  autocrlf = false
+  editor = vim
+[diff]
+  tool=vimdiff
+
+[alias]
+  st = status
+  po = push origin
+  rbi = rebase -i
+  rbi1 = rebase -i HEAD^
+  rbi2 = rebase -i HEAD^^
+  rbi3 = rebase -i HEAD^^^
+  rbi4 = rebase -i HEAD^^^^
+  rbi5 = rebase -i HEAD^^^^^
+  rbi6 = rebase -i HEAD^^^^^^
+  rbi7 = rebase -i HEAD^^^^^^^
+  rbi8 = rebase -i HEAD^^^^^^^^
+  rbi9 = rebase -i HEAD^^^^^^^^^
+  ad = add
+  ci = commit
+  ca = commit --amend
+  co  = checkout
+  cb  = checkout -b
+  br  = branch
+  r   = reset HEAD
+  cp = cherry-pick
